@@ -13,6 +13,9 @@
 		3CA112121EBB9FAB0049A2B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CA112101EBB9FAB0049A2B9 /* Main.storyboard */; };
 		3CA112141EBB9FAB0049A2B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CA112131EBB9FAB0049A2B9 /* Assets.xcassets */; };
 		3CA112171EBB9FAB0049A2B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CA112151EBB9FAB0049A2B9 /* LaunchScreen.storyboard */; };
+		3CA112201EBBA1310049A2B9 /* NormalHTMLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1121F1EBBA1310049A2B9 /* NormalHTMLViewController.m */; };
+		3CA112231EBBA15D0049A2B9 /* IGHTMLQueryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA112221EBBA15D0049A2B9 /* IGHTMLQueryViewController.m */; };
+		3CA112251EBBA5270049A2B9 /* PageOne.html in Resources */ = {isa = PBXBuildFile; fileRef = 3CA112241EBBA5270049A2B9 /* PageOne.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		3CA112131EBB9FAB0049A2B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CA112161EBB9FAB0049A2B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CA112181EBB9FAB0049A2B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CA1121E1EBBA1310049A2B9 /* NormalHTMLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalHTMLViewController.h; sourceTree = "<group>"; };
+		3CA1121F1EBBA1310049A2B9 /* NormalHTMLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalHTMLViewController.m; sourceTree = "<group>"; };
+		3CA112211EBBA15D0049A2B9 /* IGHTMLQueryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGHTMLQueryViewController.h; sourceTree = "<group>"; };
+		3CA112221EBBA15D0049A2B9 /* IGHTMLQueryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGHTMLQueryViewController.m; sourceTree = "<group>"; };
+		3CA112241EBBA5270049A2B9 /* PageOne.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PageOne.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +66,15 @@
 		3CA112061EBB9FAB0049A2B9 /* HTMLParseDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3CA112241EBBA5270049A2B9 /* PageOne.html */,
 				3CA1120A1EBB9FAB0049A2B9 /* AppDelegate.h */,
 				3CA1120B1EBB9FAB0049A2B9 /* AppDelegate.m */,
 				3CA1120D1EBB9FAB0049A2B9 /* ViewController.h */,
 				3CA1120E1EBB9FAB0049A2B9 /* ViewController.m */,
+				3CA1121E1EBBA1310049A2B9 /* NormalHTMLViewController.h */,
+				3CA1121F1EBBA1310049A2B9 /* NormalHTMLViewController.m */,
+				3CA112211EBBA15D0049A2B9 /* IGHTMLQueryViewController.h */,
+				3CA112221EBBA15D0049A2B9 /* IGHTMLQueryViewController.m */,
 				3CA112101EBB9FAB0049A2B9 /* Main.storyboard */,
 				3CA112131EBB9FAB0049A2B9 /* Assets.xcassets */,
 				3CA112151EBB9FAB0049A2B9 /* LaunchScreen.storyboard */,
@@ -138,6 +151,7 @@
 			files = (
 				3CA112171EBB9FAB0049A2B9 /* LaunchScreen.storyboard in Resources */,
 				3CA112141EBB9FAB0049A2B9 /* Assets.xcassets in Resources */,
+				3CA112251EBBA5270049A2B9 /* PageOne.html in Resources */,
 				3CA112121EBB9FAB0049A2B9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +165,8 @@
 			files = (
 				3CA1120F1EBB9FAB0049A2B9 /* ViewController.m in Sources */,
 				3CA1120C1EBB9FAB0049A2B9 /* AppDelegate.m in Sources */,
+				3CA112201EBBA1310049A2B9 /* NormalHTMLViewController.m in Sources */,
+				3CA112231EBBA15D0049A2B9 /* IGHTMLQueryViewController.m in Sources */,
 				3CA112091EBB9FAB0049A2B9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
