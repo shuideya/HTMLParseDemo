@@ -16,6 +16,7 @@
 		3CA112201EBBA1310049A2B9 /* NormalHTMLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1121F1EBBA1310049A2B9 /* NormalHTMLViewController.m */; };
 		3CA112231EBBA15D0049A2B9 /* IGHTMLQueryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA112221EBBA15D0049A2B9 /* IGHTMLQueryViewController.m */; };
 		3CA112251EBBA5270049A2B9 /* PageOne.html in Resources */ = {isa = PBXBuildFile; fileRef = 3CA112241EBBA5270049A2B9 /* PageOne.html */; };
+		3EF578271EBC30B2007875A7 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 3EF578261EBC30B2007875A7 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		3CA112211EBBA15D0049A2B9 /* IGHTMLQueryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGHTMLQueryViewController.h; sourceTree = "<group>"; };
 		3CA112221EBBA15D0049A2B9 /* IGHTMLQueryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGHTMLQueryViewController.m; sourceTree = "<group>"; };
 		3CA112241EBBA5270049A2B9 /* PageOne.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PageOne.html; sourceTree = "<group>"; };
+		3EF578261EBC30B2007875A7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 		3CA111FB1EBB9FAB0049A2B9 = {
 			isa = PBXGroup;
 			children = (
+				3EF578261EBC30B2007875A7 /* README.md */,
 				3CA112061EBB9FAB0049A2B9 /* HTMLParseDemo */,
 				3CA112051EBB9FAB0049A2B9 /* Products */,
 			);
@@ -123,6 +126,7 @@
 				TargetAttributes = {
 					3CA112031EBB9FAB0049A2B9 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 6WWZY7KK74;
 					};
 				};
 			};
@@ -163,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EF578271EBC30B2007875A7 /* README.md in Sources */,
 				3CA1120F1EBB9FAB0049A2B9 /* ViewController.m in Sources */,
 				3CA1120C1EBB9FAB0049A2B9 /* AppDelegate.m in Sources */,
 				3CA112201EBBA1310049A2B9 /* NormalHTMLViewController.m in Sources */,
@@ -279,6 +284,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6WWZY7KK74;
 				INFOPLIST_FILE = HTMLParseDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = aday.HTMLParseDemo;
@@ -290,6 +296,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6WWZY7KK74;
 				INFOPLIST_FILE = HTMLParseDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = aday.HTMLParseDemo;
@@ -316,6 +323,7 @@
 				3CA1121D1EBB9FAB0049A2B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

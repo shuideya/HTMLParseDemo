@@ -29,9 +29,9 @@
 //    2.1
     NSURL* url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"PageOne" ofType:@"html"]];
     NSString * htmlstring = [[NSString alloc]initWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
-//    NSString *htmlstr1 = [self handleHtmlOne:htmlstring];
+    NSString *htmlstr1 = [self handleHtmlTwo:htmlstring];
 //    NSString *htmlstr2 = [self.webView stringByEvaluatingJavaScriptFromString:htmlstr1];
-    [self.webView loadHTMLString:htmlstring baseURL:nil];
+    [self.webView loadHTMLString:htmlstr1 baseURL:nil];
     
     
 //    2.2
@@ -40,18 +40,47 @@
     
     
     
+}
+
+/*
+ *  OC对转义字符的表示方法
+ \a - Sound alert
+ \b - 退格
+ \f - Form feed
+ \n - 换行
+ \r - 回车
+ \t - 水平制表符
+ \v - 垂直制表符
+ \\ - 反斜杠
+ \" - 双引号
+ \' - 单引号
+ 
+ frome:http://dditblog.com/itshare_558.html
+ */
+//去掉反斜杠
+- (NSString *)handleHtmlTwo:(NSString *)htmlstr{
     
-    //有些情况下 由于字符串里面含有双引号(") 和 同时多个换行符(\n\n),需要做替换处理，否则会导致效果出不来
+    NSMutableString *responseString = [NSMutableString stringWithString:htmlstr];
+    NSString *character = nil;
+    for (int i = 0; i < responseString.length; i ++) {
+        character = [responseString substringWithRange:NSMakeRange(i, 1)];
+        if ([character isEqualToString:@"\\"])
+            [responseString deleteCharactersInRange:NSMakeRange(i, 1)];
+    }
+    
+    
+    return responseString;
     
 }
 
+//并不好使
 - (NSString *)handleHtmlOne:(NSString *)htmlstr{
     
     NSString *string = [NSString stringWithFormat:@"(\"%@\").toString().replace(/</g, \"<\").replace(/>/g, \">\").replace(/'/g, \"'\").replace(/ /g, \" \").replace(/&/g, \"&\");",htmlstr];
     
     string = [htmlstr stringByReplacingOccurrencesOfString:@"\\n" withString:@""];
     
-    string = [string stringByReplacingOccurrencesOfString:@"\"" withString:@""];
+    string = [htmlstr stringByReplacingOccurrencesOfString:@"" withString:@""];
     
     return string;
     
